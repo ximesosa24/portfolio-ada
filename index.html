@@ -5,17 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Potfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        
     </head>
     <header>
         <nav class="barra-nav">
             <ul>
-                <li> <a href=""> Hola</a></li>
-                <li> <a href=""> Conocimientos</a></li>
-                <li> <a href=""> Proyectos </a></li>
-                <li class="contact"> <a href=""> Contacto </a></li>
+                <li class="barra"> <a href="#"> Hola</a></li>
+                <li class="barra"> <a href="#"> Conocimientos</a></li>
+                <li class="barra"> <a href="#"> Proyectos </a></li>
+                <li  class="contact"> <a href=""> Contacto </a></li>
             </ul>
         </nav>
     </header>
+
     <body>
         <div class="container">
             <div class="presentacion">
@@ -24,7 +27,7 @@
                 <p>Estoy dando mis primeros pasos en programación. <br>Toco la guitarra y me gusta cantar</p>
             </div>
             <div class="imagen">
-                <img  class="yo" src="https://img.freepik.com/vector-premium/chica-computadora-portatil-chica-trabajando-computadora-portatil-trabajo-o-estudio-remoto_238404-1178.jpg?w=826" alt="imagen">
+                <img  class="yo" src="./foto6.svg" alt="imagen">
             </div>
         </div>
         <hr>
@@ -35,7 +38,7 @@
         <div class="knows">
             <div class="section">
                 <div class="cuadro-1">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.sTD3jjh3OYnaOY4GJvP4SAHaHa&pid=Api&P=0&h=180" alt="logo-html"> 
+                    <img class="no"  src="" alt="logo-html"> 
                     <h3>HTML 5</h3> 
                 </div>
                 <div class="cuadro-2">
@@ -50,7 +53,55 @@
                 <div class="cuadro-5">React</div>
                 <div class="cuadro-6">GIT</div>
             </div> -->
+
         </div>
+        <section class="quote-container">
+            <i class="quote-icon devicon-jira-plain"></i>
+            <blockquote class="quote-txt"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas consequuntur commodi quae aliquam adipisci minus maxime praesentium reiciendis ipsam voluptatum libero corporis cumque deleniti, autem, veritatis aspernatur provident rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolor accusantium officia autem, error blanditiis in voluptates reprehenderit! Aliquid nam earum aut enim molestias praesentium eos dolor deserunt ipsa sint". </blockquote>
+            <p class="quote-firm">Someone</p>
+        </section>
+        <section class="Proyect">
+            <p class="proyect-title"> Mis proyectos</p>
+            <p class="proyect-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, officia veniam iure quibusdam natus distinctio totam dolore amet dolor aut exercitationem delectus id, quisquam iusto! Quos distinctio incidunt enim iste.</p>
+            <section class="cards"> <!--agregar-iconos-->
+            <div class="card-portfolio">Portfolio</div>
+            <div class="card-meme">Generador de memes</div>
+            <div class="card-match">Match 3</div>
+            <div class="card-gastos">Controlador de gastos</div>
+            <div class="card-reuniones">Administrador de reuniones</div>
+            <div class="card-app">Todo app</div>
+            <div class="card-search">Buscador de peliculas</div>
+            </section>
+        </section>
+        <br>
+        <br>
+        <br>
+        <div class="Contactos"> 
+            <div class="contacto">
+            <h2>Contactame</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Neque, sequi eligendi. Ex laudantium repellendus harum qui, nisi, <br> eaque maiores sapiente esse neque, cum eveniet commodi suscipit. <br> Deleniti dolorem cupiditate ea.</p>
+            <p class="twitter">@AdaLovelace</p>
+            <p class="github">AdaLovelace</p>
+            <p class="linkedin">adalovelace</p>
+            <p class="mail">ada.lovelace@gmail.com</p>
+            </div>
+            <div class="datos">
+            <h2> Escribime</h2>
+            <forms class="forms">
+            <label for="Nombre">  Nombre:*</label>
+            <input type="Name" name="nombre" placeholder="p.ej:Ada"/>   <br>
+            <label for="Apellido">  Apellidos:*</label>
+            <input type="apellido" name="Apellidos" placeholder="p.ej:Lovelace"/> <br>
+            <label for="mail">  E-mail:*</label>
+            <input type="email" name="mail" placeholder="p.ej:ada.lovelace@gmail.com"/> <br>
+            <label for="mensaje">  Mensaje:*</label>
+            <input type="mensaje" name="Mensaje" placeholder="Escriba aquí su texto:"/> <br>
+            <button type="submit"> Enviar </button>
+            </forms>
+            </div>
+        </div>
+        <footer>
+        </footer>
     </body>
     </html>
 
