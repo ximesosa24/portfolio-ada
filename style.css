@@ -3,20 +3,22 @@
     padding: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 } 
-/*falta ordenar y modificar!!*/
+
 body{
     background-color:#a46961bf ;
 }
+
+/*BARRA-NAVEGACION*/
 .barra-nav{
     height: 75px;
     background-color:#e1aea4;
     display: flex;
     justify-content: end;
     /*margin-top: 30px;*/
-
-    
 }
+
 li{
     display:inline;
     /*flex-direction: row;*/
@@ -27,9 +29,12 @@ li{
     font-size: 24px;
     padding: 6px;
     line-height: 55px;
-    
-    
 }
+
+a{
+    color:black;
+}
+
 .contact{
     width: 40px;
     height:40px;
@@ -37,22 +42,22 @@ li{
     background-color: #a46961;
     border-radius: 20px;
     padding: 10px;
-    
 }
 
+/*PRESENTACION*/
 .yo{
     width: 300px;
     border-radius: 10px;
 }
-.presentacion{
+/*.presentacion{
     font-size: ;
-}
+}*/
 h1{
     color : #854740;
     font-size:50px;
     text-transform:inherit;
 }
-.container{
+.container-presentacion{
     display: flex;
     flex-direction: row;
     margin: 30px 10px 20px 20px;
@@ -60,52 +65,84 @@ h1{
     height: 600px;
     align-items: center;
 }
+
+img{
+    width: 100%;
+    /*box-shadow: 2px 3px 3px 2px rgb(215, 189, 226);*/
+}
 p{
     font-size: 20px;
 }
+
+/*CONOCIMIENTOS*/
 .conocimientos{
-    display: block;
+    display: flex;
     justify-content:center;
-    font-size: 10px;
+    flex-direction: column;
+    font-size: 20px;
+    height: 80px;
+    margin-top: 100px ;
+    line-height: 30px;
+}
+.conocimientos-txt, .conocimientos-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.conocimientos-title{
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-size: xx-large;
+
 }
 .knows{
-    border: 1px solid rgb(237, 243, 238);
-    width: 500px;
-    height: 500px;
-    margin-left: 350px;
-    display: flex;
-	flex-direction:row;
-	
+    width: 800px;
+    height: 600px;
+    display:flex;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 } 
 
-.section{
+/*.section{
     display: flex;
     flex-direction: row;
     border: 1px solid #a46961;
     width: 100%;
     height: 50%;
     justify-content: space-between;
-}
+}*/
 
-.cuadro-1, .cuadro-2, .cuadro-3{
-    display: inline;
-    justify-content: space-between;
+.cuadro-1, .cuadro-2, .cuadro-3,.cuadro-4, .cuadro-5, .cuadro-6{
+    display: flex;
     width:200px ;
     height: 200px ;
-    border: 1px solid rgb(41, 6, 165);
-    margin: 30px 20px ;
-}
-img{
-    width: 100%;
-    /*box-shadow: 2px 3px 3px 2px rgb(215, 189, 226);*/
+    border: 1px solid #2906a5;
+    margin: 10px 10px 3px 10px ;
+    flex-wrap: wrap;
+    flex-direction:row;
     
 }
 
-a{
-    color:black;
-}
+/*.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    flex-direction:baseline;
 
-/*Section-Quote*/
+}*/
+/*.cuadro-4, .cuadro-5, .cuadro-6{
+    border: 1px solid yellow;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}*/
+
+/*CITA DE TEXTO*/
 .quote-container{
     display: flex;
     flex-direction: column;
@@ -128,7 +165,7 @@ a{
     font-size: 35px;
     font-weight: bold;
 }
-/*Section-Proyect*/
+/*--PROYECTOS--*/
 .Proyect{
     height: 1200px;
     /*background-color: white;*/
@@ -162,13 +199,12 @@ a{
     flex-wrap: wrap;
     margin: 10px 15px;
 }
-/*Section-Contactos*/
+/*--CONTACTAME--*/
 .Contactos{
     height: 400px;
     display: flex;
     justify-content:space-around;
     flex-direction: row;
-
 }
 .contacto{
     display: flex;
