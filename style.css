@@ -211,3 +211,19 @@ p{
     flex-direction: column;
     line-height: 20px;
 }
+
+/*PIE DE PAGINA*/
+footer{
+    background-color: #a46961;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+.nav-li, .firma{
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+}
