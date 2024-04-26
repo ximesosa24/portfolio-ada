@@ -49,9 +49,7 @@ a{
     width: 300px;
     border-radius: 10px;
 }
-/*.presentacion{
-    font-size: ;
-}*/
+
 h1{
     color : #854740;
     font-size:50px;
@@ -96,31 +94,26 @@ p{
 
 }
 .knows{
-    width: 800px;
     height: 600px;
     display:flex;
     margin-top: 120px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
 
 } 
 
-/*.section{
+.section{
     display: flex;
     flex-direction: row;
     border: 1px solid #a46961;
-    width: 100%;
-    height: 50%;
-    justify-content: space-between;
-}*/
+}
 
-.cuadro-1, .cuadro-2, .cuadro-3,.cuadro-4, .cuadro-5, .cuadro-6{
+.cuadro-1, .cuadro-2, .cuadro-3, .cuadro-4, .cuadro-5, .cuadro-6{
     display: flex;
     width:200px ;
     height: 200px ;
     border: 1px solid #2906a5;
-    margin: 10px 10px 3px 10px ;
-    flex-wrap: wrap;
+    margin: 10px;
     flex-direction:row;
     
 }
@@ -184,9 +177,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     height:1000px;
-    width: 1000px;
-    margin-left: 50px;
-    margin-top: 20px;
+    justify-content: space-between;
 }
 .card-portfolio,.card-meme,
 .card-match,.card-gastos,.card-reuniones,
@@ -195,10 +186,22 @@ p{
     height: 300px;
     background-color: white;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 15px;
+    margin-top: 50px ;
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-direction: column;
+    border-radius: 10px;
 }
+
+.img-logo, .img-memes, .img-match, .img-gastos, .img-calendar, .img-app, .img-movies{
+    width: 200px;
+    height: 210px;
+    display: flex;
+    align-items:normal;
+    margin: 10px 10px 20px 30px;
+}
+
 /*--CONTACTAME--*/
 .Contactos{
     height: 400px;
@@ -210,6 +213,15 @@ p{
     display: flex;
     flex-direction: column;
     line-height: 20px;
+}
+.container-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.twitter, .mail{
+    width: 20px;
+    height: 20px;
 }
 
 /*PIE DE PAGINA*/
