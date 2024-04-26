@@ -1,10 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Sedan";
     text-decoration: none;
     box-sizing: border-box;
 } 
+
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
 
 body{
     background-color:#a46961bf ;
@@ -69,7 +82,7 @@ img{
     /*box-shadow: 2px 3px 3px 2px rgb(215, 189, 226);*/
 }
 p{
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /*CONOCIMIENTOS*/
@@ -93,25 +106,28 @@ p{
     font-size: xx-large;
 
 }
-.knows{
+.container-conocimientos{
     height: 600px;
-    display:flex;
-    margin-top: 120px;
+    display:inline-flex;
+    margin-top: 40px;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 4px 11px;
+    padding: 50px 220px;
 
 } 
 
 .section{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     border: 1px solid #a46961;
 }
 
 .cuadro-1, .cuadro-2, .cuadro-3, .cuadro-4, .cuadro-5, .cuadro-6{
     display: flex;
-    width:200px ;
-    height: 200px ;
+    width:180px ;
+    height: 180px ;
     border: 1px solid #2906a5;
     margin: 10px;
     flex-direction:row;
@@ -200,6 +216,7 @@ p{
     display: flex;
     align-items:normal;
     margin: 10px 10px 20px 30px;
+    object-fit: contain;
 }
 
 /*--CONTACTAME--*/
