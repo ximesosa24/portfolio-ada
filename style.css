@@ -128,11 +128,33 @@ p{
     display: flex;
     width:180px ;
     height: 180px ;
-    border: 1px solid #2906a5;
+    border: 1px solid rgb(196, 166, 166);
     margin: 10px;
-    flex-direction:row;
-    
+    flex-direction:column;
+    padding: 30px;
+    border-radius: 10px;
+    touch-action: pinch-zoom; /*preguntar*/
+    background-color: #e1aea4;
+    box-shadow: 1px 2px 2px 0 gray;
 }
+
+.cuadro-3{
+    display: flex;
+    flex-direction: column;
+    align-items:
+
+}
+
+.colored{
+    font-size: 6em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
 
 /*.section-2{
     display: flex;
@@ -200,7 +222,9 @@ p{
 .card-app,.card-search{
     width: 300px;
     height: 300px;
-    background-color: white;
+    background-color: #e1aea4
+    
+    ;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px ;
@@ -208,6 +232,8 @@ p{
     margin-right: 60px;
     flex-direction: column;
     border-radius: 10px;
+    border: 1px solid#854740;
+    box-shadow: 0 2px 2px 0 gray;
 }
 
 .img-logo, .img-memes, .img-match, .img-gastos, .img-calendar, .img-app, .img-movies{
@@ -248,7 +274,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 200px;
+    height: 180px;
     text-align: center;
     color: rgb(83, 83, 83);
 }
