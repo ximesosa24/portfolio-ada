@@ -44,8 +44,9 @@ li{
     line-height: 55px;
 }
 
-a{
+a:hover{
     color:black;
+    cursor: pointer;
 }
 
 .contact{
@@ -222,9 +223,7 @@ h3{
 .card-app,.card-search{
     width: 300px;
     height: 300px;
-    background-color: #e1aea4
-    
-    ;
+    background-color: #e1aea4;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px ;
@@ -251,16 +250,17 @@ h3{
     display: flex;
     justify-content:space-around;
     flex-direction: row;
+    box-shadow:3px 2px 2px 2px gray;
 }
 .contacto{
     display: flex;
     flex-direction: column;
-    line-height: 20px;
+    line-height: 40px;
+    margin-top: 40px;
+    
 }
-.container-logos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.datos{
+/*falta estilar*/
 }
 .twitter, .mail{
     width: 20px;
@@ -278,7 +278,34 @@ footer{
     text-align: center;
     color: rgb(83, 83, 83);
 }
-.nav-li, .firma{
+.nav-li{
     color: rgb(83, 83, 83);
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.container-logos{
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+
+}
+.x-logo, .github-logo, .linkedin-logo, .email-logo, .amor{
+    width: 25px;
+}
+.container-firma{
+    padding-top: 20px;
+    color: rgb(83, 83, 83);
+    font-size: 20px;
+}
+
+@media (min-width:800px){
+    body{
+        
+    }
+}
+@media (max-width:576px){
+    .conocimientos{
+        flex-direction: wrap;
+        
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,20 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Sedan:ital@0;1&display=swap');
             </style>
-        
     </head>
-    <header>
-        <!--BARRA-NAVEGACIÓN-->
-        <nav class="barra-nav">
-            <ul>
-                <li class="barra"> <a href="#Hola"> Hola</a></li>
-                <li class="barra"> <a href="#Conocimientos"> Conocimientos</a></li>
-                <li class="barra"> <a href="#Proyecto"> Proyectos </a></li>
-                <li  class="contact"> <a href="#Contacto"> Contacto </a></li>
-            </ul>
-        </nav>
-    </header>
-
+    
     <body>
+        <header>
+            <!--BARRA-NAVEGACIÓN-->
+            <nav class="barra-nav">
+                <ul>
+                    <li class="barra"> <a href="#Hola"> Hola</a></li>
+                    <li class="barra"> <a href="#Conocimientos"> Conocimientos</a></li>
+                    <li class="barra"> <a href="#Proyecto"> Proyectos </a></li>
+                    <li  class="contact"> <a href="#Contacto"> Contacto </a></li>
+                </ul>
+            </nav>
+        </header>
         <!--PRESENTACIÓN-->
         <div class="container-presentacion" id="Hola">
             <div class="presentacion">
@@ -37,7 +36,7 @@
         </div>
         
         <!--CONOCIMIENTOS-->
-        <div class="conocimientos" id="Conocimientos">
+        <div class="conocimientos" id="Conocimientos"> <!--modificar nombre de la clase, diferenciarlos correctamente-->
             <h2 class="conocimientos-title"> Mis conocimientos</h2>
             <p class="conocimientos-txt" style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Beatae eaque neque molestias consequuntur vel ab quas architecto.</p>
         </div>
@@ -72,8 +71,8 @@
         <!--CITA DE TEXTO-->
         <section class="quote-container">
             <i class="quote-icon devicon-jira-plain"></i>
-            <blockquote class="quote-txt"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas consequuntur commodi quae aliquam adipisci minus maxime praesentium reiciendis ipsam voluptatum libero corporis cumque deleniti, autem, veritatis aspernatur provident rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolor accusantium officia autem, error blanditiis in voluptates reprehenderit! Aliquid nam earum aut enim molestias praesentium eos dolor deserunt ipsa sint". </blockquote>
-            <p class="quote-firm">Someone</p>
+            <blockquote class="quote-txt"> "Como planta por nacer, nuestro sueño busca el sol, <br> Como un árbol quiero estar <br> Sin regarle las raíces no florecerá ". </blockquote>
+            <p class="quote-firm">Abel</p>
         </section>
         <!--PROYECTOS-->
         <section class="Proyect">
@@ -131,7 +130,7 @@
         <!--CONTACTAME-->
         <div class="Contactos" id="Contacto"> 
             <div class="contacto">
-                <h2>Contactame</h2>
+                <h2>Contacto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Neque, sequi eligendi. Ex laudantium repellendus harum qui, nisi, <br> eaque maiores sapiente esse neque, cum eveniet commodi suscipit. <br> Deleniti dolorem cupiditate ea.</p>
                 <p class="twitter">@AdaLovelace</p>
                 <p class="github">AdaLovelace</p>
@@ -157,19 +156,21 @@
         <footer>
             <nav class="nav-bar">
                 <ul class="nav-ul">
-                    <li class="nav-li"> <a href="#"> Hola</a></li>
-                    <li class="nav-li"> <a href="#"> Conocimientos</a></li>
-                    <li class="nav-li"> <a href="#"> Proyectos </a></li>
-                    <li class="nav-li"> <a href=""> Contacto </a></li>
+                    <li class="nav-li"> <a href="#Hola"> Hola</a></li>
+                    <li class="nav-li"> <a href="#Conocimientos"> Conocimientos</a></li>
+                    <li class="nav-li"> <a href="#Proyecto"> Proyectos </a></li>
+                    <li class="nav-li"> <a href="#Contacto"> Contacto </a></li>
                 </ul>
             </nav>
             <div class="container-logos">
-                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
-                <i class="devicon-github-original"></i>
-                <i class="devicon-linkedin-plain"></i>
-                <svg  class="mail" classmail="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825s-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"/></svg>
-                <p class="firma">Hecho con ❤️ por Xime </p>
-            </div>
+                <img class="x-logo" src="./img/x.png"> <a href=""></a>
+                <img  class="github-logo" src="./img/github.png"> <a href="https://github.com/ximesosa24"></a>
+                <img class="linkedin-logo" src="./img/lkd.png"><a href="https://ar.linkedin.com/in/ximena-sosa-666665215"></a>
+                <img  class="email-logo" src="./img/mail.png" alt="">
+            </div>    
+                <div class="container-firma">
+                <p>Hecho <img class="amor" src="./img/amor.png" alt=""> por Xime </p>
+                </div>
         </footer>
     </body>
     </html>
