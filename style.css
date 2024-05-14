@@ -19,17 +19,18 @@
   }
   
 
-body{
+/*body{
     background-color:#a46961bf ;
-}
+} */
 
 /*BARRA-NAVEGACION*/
 .barra-nav{
-    height: 75px;
-    background-color:#e1aea4;
+    padding: 20px;
+    width:100%;
+    background-color:#e0cac5;
     display: flex;
     justify-content: end;
-    /*margin-top: 30px;*/
+    box-shadow: 0 0 30px 0 rgb(206, 134, 134);
 }
 
 li{
@@ -53,7 +54,7 @@ a:hover{
     width: 40px;
     height:40px;
     color: white;
-    background-color: #a46961;
+    background-color: #c3948e;
     border-radius: 20px;
     padding: 10px;
 }
@@ -65,7 +66,7 @@ a:hover{
 }
 
 h1{
-    color : #854740;
+    color : #864740;
     font-size:50px;
     text-transform:inherit;
 }
@@ -108,7 +109,8 @@ p{
 
 }
 .container-conocimientos{
-    height: 600px;
+    /*height: 600px;*/
+    max-width: 100%;
     display:inline-flex;
     margin-top: 40px;
     flex-wrap:wrap;
@@ -116,19 +118,14 @@ p{
     align-content: space-evenly;
     gap: 4px 11px;
     padding: 50px 220px;
-
+    
 } 
 
-.section{
-    display: flex;
-    flex-direction:row;
-    border: 1px solid #a46961;
-}
 
 .cuadro-1, .cuadro-2, .cuadro-3, .cuadro-4, .cuadro-5, .cuadro-6{
     display: flex;
     width:180px ;
-    height: 180px ;
+    min-height: 180px ;
     border: 1px solid rgb(196, 166, 166);
     margin: 10px;
     flex-direction:column;
@@ -139,12 +136,6 @@ p{
     box-shadow: 1px 2px 2px 0 gray;
 }
 
-.cuadro-3{
-    display: flex;
-    flex-direction: column;
-    align-items:
-
-}
 
 .colored{
     font-size: 6em;
@@ -180,11 +171,12 @@ h3{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 800px;
+    height: 100%;
     background-color: #a46961;
-    padding: 0 90px;
+    background: linear-gradient(190deg, #a46961, #5e2821 );
+    padding: 150px 90px;
     line-height: 40px;
-    margin: 90px 10px;
+    /*margin: 90px 10px; va??*/ 
 }
 .quote-icon {
     font-size: 60px;
@@ -199,11 +191,9 @@ h3{
 }
 /*--PROYECTOS--*/
 .Proyect{
-    height: 1200px;
-    /*background-color: white;*/
     display: flex;
     flex-direction: column;
-    justify-content: justify; /*no centra*/
+    justify-content: center ;
     text-align: center;
 }
 .proyect-title{
@@ -298,14 +288,25 @@ footer{
     font-size: 20px;
 }
 
-@media (min-width:800px){
-    body{
+@media screen (max-width:480px){
+    .container-presentacion{
+        display: flex ;
+        flex-direction: column;
+    }
+    .container-conocimientos{
+        display: flex;
+        flex-direction: none;
+        flex-wrap: wrap;
         
     }
-}
-@media (max-width:576px){
-    .conocimientos{
-        flex-direction: wrap;
-        
+    .cuadro-1, .cuadro-2, .cuadro-3 ,.cuadro-4, .cuadro-5, .cuadro-6{
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin: 3px;
     }
+
 }
