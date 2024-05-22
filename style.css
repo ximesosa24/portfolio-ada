@@ -86,6 +86,13 @@ img{
 p{
     font-size: 19px;
 }
+.button-presentacion{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
 
 /*CONOCIMIENTOS*/
 .conocimientos{
@@ -93,7 +100,6 @@ p{
     justify-content:center;
     flex-direction: column;
     font-size: 20px;
-    height: 80px;
     margin-top: 100px ;
     line-height: 30px;
 }
@@ -122,7 +128,7 @@ p{
 } 
 
 
-.cuadro-1, .cuadro-2, .cuadro-3, .cuadro-4, .cuadro-5, .cuadro-6{
+.cuadros{
     display: flex;
     width:180px ;
     min-height: 180px ;
@@ -131,11 +137,10 @@ p{
     flex-direction:column;
     padding: 30px;
     border-radius: 10px;
-    touch-action: pinch-zoom; /*preguntar*/
     background-color: #e1aea4;
     box-shadow: 1px 2px 2px 0 gray;
+    cursor: pointer;
 }
-
 
 .colored{
     font-size: 6em;
@@ -208,9 +213,7 @@ h3{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card-portfolio,.card-meme,
-.card-match,.card-gastos,.card-reuniones,
-.card-app,.card-search{
+.card{
     width: 300px;
     height: 300px;
     background-color: #e1aea4;
@@ -263,9 +266,9 @@ button{
     height: 35px;
     width: 55px;
     background:#6d1c1c8e;
-  color:#fff;
-  transition:800ms ease all;
-  cursor: pointer;
+    color:#fff;
+    transition:800ms ease all;
+    cursor: pointer;
 }
 button:hover{
     background:#fff;
@@ -287,6 +290,7 @@ footer{
     height: auto;
     text-align: center;
     color: rgb(83, 83, 83);
+    padding: 15px 0 15px 0;
 }
 .nav-li{
     color: rgb(83, 83, 83);
