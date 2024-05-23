@@ -4,6 +4,7 @@
     font-family: "Sedan";
     text-decoration: none;
     box-sizing: border-box;
+    color: white;
 } 
 
 .sedan-regular {
@@ -18,19 +19,26 @@
     font-style: italic;
   }
   
+:root{
+    --nav: #4d4d8ba8;
+    --bg-card:#4d4d8b7a;
+    --bg-btn:#2a2d74;
+}
 
-/*body{
-    background-color:#d17e7393 ;
-} */
+body{
+    background: linear-gradient(270deg, #1b1429, #140f23);
+}
 
 /*BARRA-NAVEGACION*/
 .barra-nav{
-    padding: 20px;
+    padding: 10px;
     width:100%;
-    background-color:#e0cac5;
+    background-color: var(--nav);
     display: flex;
     justify-content: end;
-    box-shadow: 0 0 30px 0 rgb(206, 134, 134);
+    box-shadow: 0 0 30px 0 rgb(177 134 206);
+    position: fixed;
+    z-index: 1;
 }
 
 li{
@@ -54,7 +62,7 @@ a:hover{
     width: 40px;
     height:40px;
     color: white;
-    background-color: #c3948e;
+    background-color: var(--bg-btn);
     border-radius: 20px;
     padding: 10px;
 }
@@ -66,17 +74,18 @@ a:hover{
 }
 
 h1{
-    color : #864740;
+    color : #6161a4;
     font-size:50px;
     text-transform:inherit;
 }
 .container-presentacion{
     display: flex;
     flex-direction: row;
-    margin: 30px 10px 20px 20px;
+    margin: 0px 10px 20px 20px;
     justify-content: space-evenly;
     height: 600px;
     align-items: center;
+    padding: 90px;
 }
 
 img{
@@ -91,6 +100,7 @@ p{
     height: 40px;
     border-radius: 10px;
     margin-top: 50px;
+    background-color: var(--bg-btn);
 
 }
 
@@ -102,6 +112,7 @@ p{
     font-size: 20px;
     margin-top: 100px ;
     line-height: 30px;
+    padding-top: 85px;
 }
 .conocimientos-txt, .conocimientos-title{
     text-align: center;
@@ -118,7 +129,6 @@ p{
     /*height: 600px;*/
     max-width: 100%;
     display:inline-flex;
-    margin-top: 40px;
     flex-wrap:wrap;
     justify-content: center;
     align-content: space-evenly;
@@ -137,7 +147,7 @@ p{
     flex-direction:column;
     padding: 30px;
     border-radius: 10px;
-    background-color: #e1aea4;
+    background: linear-gradient(270deg, #766695, #140f23);
     box-shadow: 1px 2px 2px 0 gray;
     cursor: pointer;
 }
@@ -178,7 +188,7 @@ h3{
     text-align: center;
     height: 100%;
     background-color: #a46961;
-    background: linear-gradient(190deg, #a46961, #5e2821 );
+    background: linear-gradient(380deg, #2e2e78, #320b5605);
     padding: 150px 90px;
     line-height: 40px;
     /*margin: 90px 10px; va??*/ 
@@ -214,9 +224,9 @@ h3{
     justify-content: space-between;
 }
 .card{
-    width: 300px;
-    height: 300px;
-    background-color: #e1aea4;
+    width: 280px;
+    height: 280px;
+    background-color: var(--bg-card);
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px ;
@@ -224,8 +234,8 @@ h3{
     margin-right: 60px;
     flex-direction: column;
     border-radius: 10px;
-    border: 1px solid#854740;
-    box-shadow: 0 2px 2px 0 gray;
+    border: 1px solid #4255ad;
+    box-shadow: 0 1px 0 0 #8400e1;
 }
 
 .img-logo, .img-memes, .img-match, .img-gastos, .img-calendar, .img-app, .img-movies{
@@ -265,7 +275,7 @@ button{
     cursor: pointer;*/
     height: 35px;
     width: 55px;
-    background:#6d1c1c8e;
+    background:var(--bg-btn);
     color:#fff;
     transition:800ms ease all;
     cursor: pointer;
@@ -282,7 +292,7 @@ button:hover{
 
 /*PIE DE PAGINA*/
 footer{
-    background-color: #a46961;
+    background-color: var(--nav);
     font-size: 11px;
     display: flex;
     flex-direction: column;

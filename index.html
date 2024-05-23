@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ximena Sosa</title>
+        <title>Ximena Sosa | Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Sedan:ital@0;1&display=swap');
         </style>
+        <link rel="icon" href="./img/favicon-logo.png" type="image/x-icon">
     </head>
     
     <body>
@@ -68,16 +69,16 @@
                 </div>
         </div>
         <!--CITA DE TEXTO-->
-        <section class="quote-container">
+        <div class="quote-container">
             <i class="quote-icon devicon-jira-plain"></i> 
             <blockquote class="quote-txt"> "Como planta por nacer, nuestro sueño busca el sol, <br> Como un árbol quiero estar, <br> Sin regarle las raíces no florecerá ". </blockquote>
             <p class="quote-firm">"Peregrinos"- Abel Pintos </p>
-        </section>
+        </div>
         <!--PROYECTOS-->
-        <section class="Proyect">
+        <div class="Proyect">
             <p class="proyect-title" id="Proyecto"> Mis proyectos</p>
             <p class="proyect-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Earum, officia veniam iure quibusdam natus distinctio totam dolore amet dolor aut <br> exercitationem delectus id, quisquam iusto! Quos distinctio incidunt enim iste.</p>
-            <section class="cards">
+            <div class="cards">
                 <div class="card-portfolio card">
                 <a href="#"><picture class="img-logo">
                     <img src="./img/foto6.svg" alt="img-logo"> 
@@ -120,8 +121,8 @@
                 </picture>
                 <p>Buscador de peliculas</p> </a>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
         <br>
         <br>
         <br>
@@ -142,13 +143,13 @@
                 <input type="text" id="Nombre"  name="nombre" placeholder="p.ej:Ada" required/>   
                 </label>
                 <label for="Apellido">  Apellidos:*
-                <input type="apellido" id="Apellido" name="Apellidos" placeholder="p.ej:Lovelace" required/> 
+                <input type="text" id="Apellido" name="Apellidos" placeholder="p.ej:Lovelace"> 
                 </label>
                 <label for="Mail"> E-mail:*
                 <input type="email" id="Mail" name="mail" placeholder="p.ej:ada.lovelace@gmail.com" required> 
                 </label>
                 <label for="Mensaje">Mensaje:*
-                <textarea type="textarea" id="Mensaje" name="mensaje" placeholder="Escriba aquí su mensaje:" required></textarea> </label>
+                <textarea id="Mensaje" name="mensaje" placeholder="Escriba aquí su mensaje:" required></textarea> </label>
 
                 <button type="submit"> Enviar  </button>
                 </form>
