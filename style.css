@@ -77,6 +77,7 @@ h1{
     color : #6161a4;
     font-size:50px;
     text-transform:inherit;
+    font-style: italic;
 }
 .container-presentacion{
     display: flex;
@@ -200,9 +201,10 @@ h3{
 .quote-txt{
     font-size: 25px;
     margin: 60px 40px;
+    font-style: italic;
 }
 .quote-firm{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 }
 /*--PROYECTOS--*/
@@ -216,6 +218,10 @@ h3{
     font-size: 30px;
     font-weight: bolder;
     line-height: 90px;
+}
+.proyect-txt{
+    display: flex;
+    padding: 30px;
 }
 .cards{
     display: flex;
@@ -245,6 +251,7 @@ h3{
     align-items:normal;
     margin: 10px 10px 20px 30px;
     object-fit: contain;
+
 }
 
 /*--CONTACTAME--*/
@@ -322,20 +329,36 @@ footer{
     font-size: 20px;
 }
 
-@media screen and (max-width:480px){
+
+
+
+@media (max-width:576px){
+    .barra-nav{
+        display: none;
+    }
     .container-presentacion{
-        display: flex ;
         flex-direction: column;
     }
-    .container-conocimientos{
-        flex-direction: column;
+    .imagen{
+        margin-top: 70px;
+    }
+    
+    .conocimientos-txt{
+        padding: 0 60px;
+    }
+    
+    .proyect-txt{
+        padding: 0 80px;
         
     }
     
     .Contactos{
     flex-direction: column;
     justify-content: none;
+    margin: 0 25%;
     }
-
+    .datos{
+    margin: 80px 0;
+    }
     
 }
